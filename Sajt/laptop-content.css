@@ -1,0 +1,154 @@
+.offer {
+  background-color: #fff;
+  position: relative;
+}
+.off_btn {
+  color: #fff;
+  padding: 0.9rem 2.5rem;
+  background-color: #f26422;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.off_btn:hover {
+  background-color: #da5416;
+}
+.offer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.signature {
+  height: 50px;
+  width: 150px;
+  margin: 2rem 2rem;
+}
+.c_pic {
+  display: flex;
+  background-color: #7799bc;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 110px;
+  height: 500px;
+  right: 375px;
+  width: 752px;
+  padding: 0 0.5rem;
+}
+
+.computer {
+  height: 600px;
+  width: 8000px;
+  margin: 5rem;
+}
+
+.c_pic h3 {
+  color: #ffffff;
+  margin: 2rem 10rem;
+  font-size: 25px;
+}
+.c_pic p {
+  color: #ffffff;
+  padding: 1rem 1rem;
+  margin: 0 2rem;
+  font-size: 18px;
+}
+
+.off_h {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  transform: rotate(-90deg);
+  font-size: 25px;
+}
+
+.off_h h2 {
+  color: #452a31;
+}
+
+.off {
+  color: #006596;
+  font-size: 3.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .offer {
+    display: flex;
+    flex-direction: column;
+  }
+  .computer {
+    height: 60vh;
+    width: 80vw;
+    margin: 5rem;
+    position: relative;
+  }
+  .c_pic {
+    display: flex;
+    background-color: #7799bc;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 185px;
+    height: 200px;
+    left: 95px;
+    width: 300px;
+    padding: 3rem 0;
+  }
+  .signature {
+    height: 40px;
+    width: 150px;
+    margin: 0.2rem 2rem;
+  }
+
+  .c_pic h3 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0 2rem;
+    font-weight: bold;
+  }
+  .c_pic p {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+  #p_off {
+    color: #000000;
+    font-size: 10px;
+    position: absolute;
+    top: 240px;
+    margin: 0 -5rem;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .off_btn {
+    position: absolute;
+    top: 310px;
+    left: 3rem;
+  }
+  .off_h {
+    position: absolute;
+    top: auto;
+    left: 150px;
+    transform: rotate(0deg);
+  }
+
+  .off_h h2 {
+    color: #452a31;
+  }
+
+  .off {
+    color: #006596;
+    font-size: 3.8rem;
+    margin-left: -0.6rem;
+  }
+}

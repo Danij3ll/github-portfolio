@@ -1,0 +1,255 @@
+h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  color: rgb(48, 9, 48);
+}
+
+.homepage {
+  display: flex;
+  padding: 0;
+}
+
+.main-container {
+  background-color: #f7d3c3;
+  padding: 3.33333vw 8.88888vw;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-container-header {
+  padding: 0.5rem 1rem;
+}
+.main-container-text {
+  padding: 0.5rem 1rem;
+}
+
+.main-container-picture {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-content-btn {
+  padding: 0 2rem;
+}
+
+/* BUTTON */
+
+.button-20 {
+  appearance: button;
+  background-color: #4a8fe8;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid #4d4ae8;
+  border-radius: 2rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-20:focus:not(:focus-visible),
+.button-20:focus {
+  outline: 0;
+}
+
+.button-20:hover {
+  background-color: #3733e5;
+  border-color: #3733e5;
+}
+
+.button-20:focus {
+  background-color: #413fc5;
+  border-color: #3e3bba;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+}
+
+.button-20:active {
+  background-color: #3e3bba;
+  background-image: none;
+  border-color: #3a38ae;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.button-20:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset,
+    rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+}
+
+.button-20:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 700px;
+    padding: 1.5555rem 2.22222rem;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .main-container-header {
+    padding: 0.2rem 0.5rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  .main-container-text {
+    padding: 0.2rem 0.5rem;
+    width: 350px;
+  }
+
+  .main-container-picture {
+    padding: 0.2rem 0.2rem;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    justify-content: center;
+  }
+
+  .main-content-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-slide1 {
+    width: 350px;
+  }
+}
+
+.imgs {
+  height: 25rem;
+  width: 25rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  width: 450px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: -20px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: -100px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color: rgb(241, 181, 102);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #f3831a;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgs {
+    width: 250px;
+    height: 250px;
+  }
+  .slideshow-container {
+    width: 250px;
+    position: relative;
+    margin: auto;
+  }
+  .dotss {
+    position: absolute;
+    bottom: -20px;
+    right: 90px;
+  }
+  .next {
+    right: -80px;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: -80px;
+  }
+}

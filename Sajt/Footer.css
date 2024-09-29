@@ -1,0 +1,160 @@
+.footer-container {
+    padding: 3.33333rem 8.88888rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #779bc7;
+}
+
+
+.first-row-footer p{
+    color: white;
+}
+
+
+.first-row-footer ul {
+    padding-left: 0;
+}
+
+.second-row-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.third-row-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+}
+
+.fourth-row-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+}
+
+.second-row-footer a {
+    color: whitesmoke;
+    font-size: 0.7rem;
+}
+
+.third-row-footer a{
+    color: whitesmoke;
+    font-size: 0.7rem;
+}
+
+.fourth-row-footer a {
+    color: whitesmoke;
+    font-size: 0.7rem;
+}
+
+.second-row-footer li {
+    padding: 0.5rem 0.5rem;
+}
+.third-row-footer li {
+    padding: 0.5rem 0.5rem;
+}
+.fourth-row-footer li {
+    padding: 0.5rem 0.5rem;
+}
+
+.second-row-footer-list {
+    padding-left: 0;
+}
+
+.third-row-footer-list {
+    padding-left: 0;
+}
+
+.fourth-row-footer-list {
+    padding-left: 0;
+}
+
+.mail {
+    margin-top: 30px;
+}
+
+.icon ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.icon-size {
+    width: 20px;
+    height: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        padding: 1.55555rem 4.44444rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-row-footer {
+        text-align: center;
+    }
+    .second-row-footer {
+        text-align: center;
+    }
+    .third-row-footer {
+        text-align: center;
+    }
+    .fourth-row-footer {
+        text-align: center;
+    }
+}
+
+/* POST FOOTER */
+ .post-footer {
+     padding: 0 8.88888rem;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     background: rgb(160, 160, 160);
+ }
+
+ .post-footer p{
+    color: whitesmoke;
+ }
+
+ .post-footer-right-list {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ .post-footer-right-list ul {
+     display: flex;
+     flex-direction: row;
+     padding-left: 0;
+    }
+
+
+ .post-footer-right-list li {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-right: 1.5rem;
+     color: whitesmoke;
+ }
+
+ .post-footer-right-list a {
+     color: whitesmoke;
+     font-size: 0.8rem;
+ }
+
+ @media screen and (max-width: 1024px) {
+     .post-footer {
+         padding: 0 4.44444rem;
+         display: flex;
+         flex-direction: column-reverse;
+     }
+ }

@@ -1,0 +1,41 @@
+.block3-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.33333rem 8.88888rem;
+}
+
+.main-text-block3 p {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(48, 9, 48);
+}
+
+.main-text-block3 span {
+    color: rgb(151, 55, 175);
+}
+
+.text-box3 {
+    display: flex;
+    text-align: center;
+}
+
+@media  screen and (max-width: 1024px) {
+    .block3-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.55555rem 2.22222rem;
+    }
+
+    .main-text-block3 p {
+        font-size: 30px;
+    }
+
+    .main-text-block3  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
